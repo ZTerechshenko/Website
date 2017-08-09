@@ -4,4 +4,4 @@ title: CV
 permalink: /cv/
 ---
 
-this is Zhanna's cv!'
+Here is the link to my [CV]({{ site.url }}/Website/assets/ZTerechshenko_cv.pdf) 
