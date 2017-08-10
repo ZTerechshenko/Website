@@ -196,7 +196,7 @@ Now we can draw the traceplot to inspect the sampling behavior and assess mixing
 traceplot(fit, pars = "beta", inc_warmup = T, nrow = 2)
 ```
 
-![](/Website/assets/unnamed-chunk-9-1.png)
+![](/assets/unnamed-chunk-9-1.png)
 
 In order to access convergence, we look primarily to the Rhat statistic, which provides the estimated ratio of the squared root of the variance of the mixture of all the chains to the average within-chain variance for a given parameter (Gelman and Hill [2006](#ref-gelman2006data)). At convergence, Rhat will equal one, but values less than 1.1 are considered acceptable for most applications. When Rhat is near one for all parameters, we judge the chains to have converged.
 
@@ -287,7 +287,7 @@ points(POSTERIORS, 1:n, col="#820303", bg="#f7f2f2", cex=1, pch=21)
 axis(side=2, at=1:n, labels=as.character(rownames(response))[INDEX], las=1)
 ```
 
-![](/Website/assets/unnamed-chunk-11-1.png)
+![](/assets/unnamed-chunk-11-1.png)
 
 #### Difficulty and Discrimination Parameters
 
@@ -333,7 +333,7 @@ axis(side=2, at=1:8, labels=NAMES[INDEX], las=2, cex=0.8)
 mtext(side = 1, "Discrimination Parameter",  line=2.5, cex=0.8)
 ```
 
-![](/Website/assets/unnamed-chunk-12-1.png)
+![](/assets/unnamed-chunk-12-1.png)
 
 ``` r
 INDEX <- 1:k
@@ -369,7 +369,7 @@ axis(side=2, at=1:8, labels=NAMES[INDEX], las=2, cex=0.8)
 mtext(side = 1, "Difficulty Parameter", main='Difficulty', line=2.5, cex=0.8)
 ```
 
-![](/Website/assets/unnamed-chunk-13-1.png)
+![](/assets/unnamed-chunk-13-1.png)
 
 #### Item Characteristic Curves
 
@@ -412,7 +412,7 @@ for(j in 1:8){
 }
 ```
 
-![](/Website/assets/unnamed-chunk-14-1.png)
+![](/assets/unnamed-chunk-14-1.png)
 
 References
 ----------
