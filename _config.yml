@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Zhanna Terechshenko
-email: zhanna.terechshenko@gmail.com
+#email: zhanna.terechshenko@gmail.com
 
 url: http://zterechshenko.com
 #baseurl: "/Website" # the subpath of your site, e.g. /blog
 #url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: z_terechshenko
-github_username:  zterechshenko
+#twitter_username: z_terechshenko
+#github_username:  zterechshenko
 
 # Build settings
 markdown: kramdown
