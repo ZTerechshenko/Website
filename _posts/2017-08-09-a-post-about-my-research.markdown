@@ -104,7 +104,7 @@ y8=response$'Item 8'
 
 The two-parameter IRT model can be written as:
 
-![Caption for the picture.](/Users/zhanna.terechshenko/IRT/CodeCogsEqn.gif)
+![](/assets/CodeCogsEqn.gif)
 
 where <a href="https://www.codecogs.com/eqnedit.php?latex=y_{ij}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{ij}" title="y_{ij}" /></a> is the response for person *j* to item *i*, *α*<sub>*i*</sub> and *β*<sub>*i*</sub> are difficulty and discrimination parameters, and *θ*<sub>*j*</sub> is the latent trait of interest. Difficulty parameter *α*<sub>*i*</sub> shows the proportion of observations in each category of the latent trait is equal to zero. Discrimination parameter *β*<sub>*i*</sub> indicates the extent to which a change in the value of one of the items corresponds to a change in the latent trait (Jackman [2009](#ref-jackman2009bayesian)).
 
