@@ -1,12 +1,13 @@
 ---
-layout: post
-title:  "IRT"
+layout: default
+title:  "Item-Response Theory model with RStan"
 date:   2017-08-09 
 ---
 
-Item-Response Theory model with RStan
 
-This blog post is designed to give an introduction of how to estimate Item-Response Theory (IRT) model in R using the RStan package. IRT model is a type of latent variable model, which is used to generate estimates of a latent trait of interest by combining information from observable items or manifest variables. This vignette assumes that the user has a prior knowledge about IRT models and focuses on the use of Stan, C++ program, which performs Bayesian inference or optimization for arbitrary user-specified models using a No-U-Turn sampler (Hoffman and Gelman [2014](#ref-hoffman2014no)), an adaptive form of Hamiltonian Monte Carlo sampling (Neal and others [2011](#ref-neal2011mcmc)). Stan has interfaces for the command-line shell (CmdStan), Python (PyStan), R (RStan), MATLAB (MatlabStan), Julia (Stan.jl), Stata (StataStan), and Mathematica (MathematicaStan) and it runs on Windows, Mac OS X, and Linux. Stan is open-source and is available at <http://mc-stan.org/> along with instructions, 500-page user manual and tutorials. In this vignette, I'll show how to estimate very simple binary response two-parameter logistic model using RStan.
+This blog post is designed to give an introduction of how to estimate Item-Response Theory (IRT) model in R using the RStan package. 
+
+IRT model is a type of latent variable model, which is used to generate estimates of a latent trait of interest by combining information from observable items or manifest variables. This vignette assumes that the user has a prior knowledge about IRT models and focuses on the use of Stan, C++ program, which performs Bayesian inference or optimization for arbitrary user-specified models using a No-U-Turn sampler (Hoffman and Gelman [2014](#ref-hoffman2014no)), an adaptive form of Hamiltonian Monte Carlo sampling (Neal and others [2011](#ref-neal2011mcmc)). Stan has interfaces for the command-line shell (CmdStan), Python (PyStan), R (RStan), MATLAB (MatlabStan), Julia (Stan.jl), Stata (StataStan), and Mathematica (MathematicaStan) and it runs on Windows, Mac OS X, and Linux. Stan is open-source and is available at <http://mc-stan.org/> along with instructions, 500-page user manual and tutorials. In this vignette, I'll show how to estimate very simple binary response two-parameter logistic model using RStan.
 
 Getting Started
 ---------------

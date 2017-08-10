@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+
+	 <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
 </head>
+
 <body>
 
-	   <div id="header" class="row"> 
+	<div id="header" class="row"> 
        <div class="container">
-        <div class="four columns">
+
             <h3>{{ page.title }}</h3>
         </div>
-		<div id="nav" class="four columns" align="right">
+ 
+		<div id="nav" class="four columns u-pull-right" aligh="right">
        		 <ul>
-       			 <li><a href="/">Home</a></li>
-       			 <li><a href="/assets/ZTerechshenko_cv.pdf">CV</a></li>
-       			 <li><a href="/blog/">Blog</a></li>
-        		 <li><a href="/contact/">Contact Me</a></li>
+       			 <a href="/">Home</a>
+       			 <a href="/assets/ZTerechshenko_cv.pdf">CV</a>
+       			 <a href="/blog/">Blog</a>
+        		 <a href="/contact/">Contact Me</a>
        		 </ul>
         </div>
-        
+       </div>
+    </div>
 
 
     <div class="container">
@@ -30,11 +49,15 @@
     </div>
     
     <div id="footer" class="row"> 
+    	<div class="four columns u-pull-right" >
 	    		<ul>
 	        		<li><a href="mailto:zhanna.terechshenko@gmail.com">Email</a></li>
 	        		<li><a href="https://github.com/zterechshenko">github.com/zterechshenko</a></li>
 				</ul>
-	</div"> 
+		</div>
+				
+	</div> 
+	
 
     
 <!-- End Document
