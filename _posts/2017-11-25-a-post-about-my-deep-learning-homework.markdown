@@ -11,7 +11,7 @@ In the first part, I will show how I develop softmax regression model and multil
 
 ### XOR problem
 
-XOR (Exclusive OR) is a classic dataset, where data points are not linearly separable. The XOR theory can be find here: http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm
+XOR (Exclusive OR) is a classic dataset, where data points are not linearly separable. The XOR theory can be find [here]: (http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm)
 
 
 Loading libraries
@@ -263,7 +263,7 @@ plt.show()
 ```
 
 
-![png](output_25_0.png)
+![png](/assets/output_25_0.png)
 
 
 It is obvious that multinomial logistic model does not fit the data well. 
@@ -449,7 +449,7 @@ print('training accuracy: %.2f' % (np.mean(predicted_class == y)))
 
 
 
-![png](output_27_1.png)
+![png](/assets/output_27_1.png)
 
 
     training accuracy: 1.00
@@ -696,7 +696,7 @@ plt.show()
 ```
 
 
-![png](output_42_0.png)
+![png](/assets/output_42_0.png)
 
 
 We achieved a pretty high accuracy (97,5%) using MLP for IRIS data. 
