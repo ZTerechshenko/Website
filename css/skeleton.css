@@ -458,9 +458,7 @@ there.
     position:absolute;
     bottom:0;
     width:100%;
-    clear: both;
-    z-index: 10;
-    border-style: solid;
+	padding: 1rem;
     border-color: #999;
     background-color: #F2F2F2;
     border-width: 1px 0px 0px 0px;
