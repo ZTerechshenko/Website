@@ -452,7 +452,7 @@ there.
 }
 
 #footer {
-    position: relative;
+    position: absolute;
     clear: both;
     z-index: 10;
     border-style: solid;
