@@ -443,11 +443,6 @@ there.
     height: auto;
 }
 
-#body {
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
-}
-
 /* Footer styles */
 
 #footer ul li {
@@ -460,8 +455,10 @@ there.
     position:relative;
     bottom:0;
     width:100%;
-    height:60px;
     clear: both;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
     border-style: solid;
     border-color: #999;
     background-color: #F2F2F2;
