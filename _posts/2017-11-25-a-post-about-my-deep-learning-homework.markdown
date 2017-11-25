@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Back-propagation of Errors and Multilayer Perceptron"
 date:   2017-11-25 
 ---
@@ -11,7 +11,7 @@ In the first part, I will show how I develop softmax regression model and multil
 
 ### XOR problem
 
-XOR (Exclusive OR) is a classic dataset, where data points are not linearly separable. The XOR theory can be find [here]: (http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm)
+XOR (Exclusive OR) is a classic dataset, where data points are not linearly separable. The XOR theory can be find [here:](http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm)
 
 
 Loading libraries
@@ -270,7 +270,7 @@ It is obvious that multinomial logistic model does not fit the data well.
 
 Now we extend softmax regression model to an MLP using activation function ReLU. The activation function transforms the inputs of the layer into its outputs. Since we have a non-linearly separable problem, we choose a nonlinear activation function. ReLU (linear rectifier unit) is one of the most popular activations functions in deep learning due to its several mathematical advantages and good performance in general.
 
-I also implement gradient-checking which is a method for numerically checking the derivatives to make sure that my implementation is correct (http://ufldl.stanford.edu/wiki/index.php/Gradient_checking_and_advanced_optimization).
+I also implement [gradient-checking](http://ufldl.stanford.edu/wiki/index.php/Gradient_checking_and_advanced_optimization) which is a method for numerically checking the derivatives to make sure that my implementation is correct.
 
 
 

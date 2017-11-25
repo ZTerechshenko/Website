@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Item-Response Theory model with RStan"
 date:   2017-08-09 
 ---
