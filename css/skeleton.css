@@ -482,6 +482,10 @@ there.
     text-decoration: underline;
 }
 
+#container {
+   height:100%;
+}
+
 .bottom-space {
     margin-bottom: 10rem
 }
