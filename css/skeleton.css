@@ -30,9 +30,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
+  height: auto;
+  min-height: 100%;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  margin-top: 0px;
   padding: 0 20px;
   box-sizing: border-box; }
 .column,
@@ -40,6 +43,7 @@
   width: 100%;
   float: left;
   box-sizing: border-box; }
+
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -479,4 +483,19 @@ there.
 
 .bottom-space {
     margin-bottom: 10rem
+}
+
+/* Horizontal separators */
+hr {
+    color: #A6A6A6;
+}
+
+table {
+    width: 100%;
+}
+
+/* indentation for lists */
+ul {
+  padding-left: 40px;
+  list-style-position: outside;
 }
