@@ -454,6 +454,7 @@ there.
 #footer {
     position:absolute;
     bottom:0;
+    width:100%;
     clear: both;
     z-index: 10;
     border-style: solid;
@@ -486,3 +487,7 @@ there.
     margin-bottom: 10rem
 }
 
+title {
+    display:block;
+    color:burgundy;
+}
