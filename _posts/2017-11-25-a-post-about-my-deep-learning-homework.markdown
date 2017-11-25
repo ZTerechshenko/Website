@@ -5,13 +5,11 @@ date:   2017-11-25
 ---
 
 
-## Introduction 
 
 This post is the result of my homework for IST: 597 Foundations of Deep Learning class at Penn State.
-
 In the first part, I will show how I develop softmax regression model and multilayear perceptron (MLP) to solve the XOR problem. In the second part, I will fit a two hidden layer MLP to a version of the IRIS dataset.
 
-## XOR problem
+### XOR problem
 
 XOR (Exclusive OR) is a classic dataset, where data points are not linearly separable. The XOR theory can be find here: http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm
 
@@ -459,7 +457,7 @@ print('training accuracy: %.2f' % (np.mean(predicted_class == y)))
 
 We achieved the accuracy of 100%!
 
-## MLP for IRIS data
+### MLP for IRIS data
 
 In this part of my blog, I will fit a 2-layer MLP to another classic dataset in machine learning - IRIS.
 
@@ -704,7 +702,7 @@ plt.show()
 We achieved a pretty high accuracy (97,5%) using MLP for IRIS data. 
 
 
-# Conclusion
+### Conclusion
 
 This exercise was pretty useful for understanding the differences between neural networks and regression model, the effect of hyperparameters on the model performance, as well as the importance of gradient checking in implementing even the simplest neural net model.
 
