@@ -33,7 +33,7 @@
   height: auto;
   min-height: 100%;
   width: 100%;
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
   margin-top: 0px;
   padding: 0 20px;
@@ -124,18 +124,12 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
-  height: 100%;
-  
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
-  height: 100%; 
-  }
-
-body > #container { height: auto; min-height: 100%; }
+  color: #222; }
 
 
 /* Typography
@@ -162,8 +156,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; 
-  line-height: 1.5; }
+  margin-top: 0; }
 
 
 /* Links
@@ -455,7 +448,7 @@ there.
 #footer ul li {
     display: inline;
     margin: 0 2rem 0 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 #footer {
@@ -463,10 +456,10 @@ there.
     clear: both;
     z-index: 10;
     border-style: solid;
-    border-color: #990033;
-    background-color: #FFFFFF;
+    border-color: #999;
+    background-color: #F2F2F2;
     border-width: 1px 0px 0px 0px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /* Header styles */
@@ -474,13 +467,13 @@ there.
 #header {
     margin-bottom: 20px;
     border-style: solid;
-    border-color: #990033;
-    background-color: #FFFFFF;
+    border-color: #999;
+    background-color: #F2F2F2;
     border-width: 0px 0px 1px 0px;
 }
 
 #header a {
-    color: #FFFFFF;
+    color: #999;
 }
 
 #header a:hover {
