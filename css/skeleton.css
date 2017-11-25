@@ -127,6 +127,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   height:100%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
