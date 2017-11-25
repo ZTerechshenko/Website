@@ -32,7 +32,6 @@
   position: relative;
   min-height: 100%;
   width: 100%;
-  auto !important;
   max-width: 960px;
   margin: 0 auto;
   margin-top: 0px;
