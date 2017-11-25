@@ -431,6 +431,9 @@ there.
     margin-bottom: 2rem;
 }
 
+
+
+
 #headerImage img {
     margin-bottom: 50px;
     max-width: 100%;
@@ -452,13 +455,11 @@ there.
 }
 
 #footer {
-    position:relative;
+    position:absolute;
     bottom:0;
     width:100%;
     clear: both;
     z-index: 10;
-    height: 3em;
-    margin-top: -3em;
     border-style: solid;
     border-color: #999;
     background-color: #F2F2F2;
