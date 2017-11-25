@@ -1,8 +1,4 @@
-layout: default
-title:  "Back-propagation of Errors and Multilayer Perceptron"
-date:   2017-11-24
----
-
+# Back-propagation of Errors and Multilayer Perceptron
 
 
 ## Introduction 
