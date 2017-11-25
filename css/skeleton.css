@@ -127,6 +127,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
+  height:100%;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
@@ -442,6 +443,11 @@ there.
     height: auto;
 }
 
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
 /* Footer styles */
 
 #footer ul li {
@@ -482,9 +488,9 @@ there.
     text-decoration: underline;
 }
 
-#container {
-   height:100%;
-}
+
+
+
 
 .bottom-space {
     margin-bottom: 10rem
