@@ -452,7 +452,7 @@ there.
 }
 
 #footer {
-    position:absolute;
+    position:relative;
     bottom:0;
     width:100%;
     clear: both;
@@ -487,7 +487,3 @@ there.
     margin-bottom: 10rem
 }
 
-title {
-    display:block;
-    color:burgundy;
-}
