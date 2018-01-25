@@ -41,7 +41,7 @@ I then computed a sum of squared differences of observed *y*<sub>*itj*</sub> and
 The figures below display the results of the predictive checks. Blue lines correspond to the inferred means with 95% confidence intervals. Orange dots correspond to the actual sample means. The fact that real values fall within the confidence intervals of simulated values provides an evidence that the model fits data well.
 
 
-<img src="/assets/postpredcheks.png" alt="my caption" style="width: 800px; height = "600; />
+<img src="/assets/postpredcheks.png" alt="my caption" width = "800" height = "600" >
 
 
 
