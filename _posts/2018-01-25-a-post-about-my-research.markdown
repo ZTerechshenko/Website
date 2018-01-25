@@ -6,7 +6,9 @@ date:   2017-11-25
 
 This blog post presents my Master thesis (available [here]({{ site.url }}/assets/ZTerechshenko_MA.pdf)), where I created a new measure of interstate hostility by applying Bayesian ordinal item-response theory (O-IRT) model to a conflict events dataset, which I have created using data from Militarized Interstate Disputes (MID), Integrated Crisis Early Warning System (ICEWS), and International Crisis Behavior (ICB) datasets. 
 
+
 The model I constructed assumes that hostility is a unidimensional trait that can be measured only using observed outcomes. I employed an item-response theory (IRT) model, which is a type of latent variable model used to generate estimates of a latent trait of interest (hostility) by combining information from observable items or manifest variables (conflict events). 
+
 
 The IRT model can be written as:
 
@@ -14,7 +16,7 @@ The IRT model can be written as:
 
 where F(.) denotes the logistic cumulative distribution function.
 
-The likelihood function for $\beta$, $\alpha$ and $\theta$ given the data is presented below:
+The likelihood function for *θ*, *β*, and *α* given the data is presented below:
 
 <img src="/assets/IRT-2.png" alt="my caption" style="height: 100px;"/>
 
