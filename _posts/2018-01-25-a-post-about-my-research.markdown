@@ -16,7 +16,7 @@ where F(.) denotes the logistic cumulative distribution function.
 
 The likelihood function for $\beta$, $\alpha$ and $\theta$ given the data is presented below:
 
-<img src="/assets/IRT-2.png" alt="my caption" style="width: 350px;"/>
+<img src="/assets/IRT-2.png" alt="my caption" style="height: 200px;"/>
 
 Since *θ*<sub>*it*</sub> cannot be fully observed, all of the parameters of interests, namely *θ*, *β*, and *α* must be estimated simultaneously. The use of Bayesian estimation, in which the model identification is achieved through the assignment of prior distributions is one of the most common approaches to solve this issue.
 
@@ -36,12 +36,12 @@ In particular, I simulated replicated data and then compared these data to the o
 If the model fits, then replicated data generated under the O-IRT model should look similar to observed data from the combined conflict data set. Using 1,000 draws from the posterior distribution, I predicted each of the *j* items *y*<sub>*itj*</sub> for every dyad-year observation, for each *y*<sub>*itj*</sub> observed. 
 I then computed a sum of squared differences of observed *y*<sub>*itj*</sub> and *d* posterior predicted values *ŷ*<sub>*itjd*</sub> to measure the accuracy of each set of predictions. This calculation is expressed as:
 
-<img src="/assets/PostPred.png" alt="my caption" style="width: 350px;"/>
+<img src="/assets/PostPred.png" alt="my caption" style="width: 300px;"/>
 
 The figures below display the results of the predictive checks. Blue lines correspond to the inferred means with 95% confidence intervals. Orange dots correspond to the actual sample means. The fact that real values fall within the confidence intervals of simulated values provides an evidence that the model fits data well.
 
 
-<img src="/assets/postpredchecks.png" alt="my caption" style="width: 500px;"/>
+<img src="/assets/postpredcheks.png" alt="my caption" style="width: 500px;"/>
 
 
 
