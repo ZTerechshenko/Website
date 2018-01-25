@@ -16,7 +16,7 @@ where F(.) denotes the logistic cumulative distribution function.
 
 The likelihood function for $\beta$, $\alpha$ and $\theta$ given the data is presented below:
 
-<img src="/assets/IRT-2.png" alt="my caption" style="height: 200px;"/>
+<img src="/assets/IRT-2.png" alt="my caption" style="height: 100px;"/>
 
 Since *θ*<sub>*it*</sub> cannot be fully observed, all of the parameters of interests, namely *θ*, *β*, and *α* must be estimated simultaneously. The use of Bayesian estimation, in which the model identification is achieved through the assignment of prior distributions is one of the most common approaches to solve this issue.
 
@@ -41,7 +41,7 @@ I then computed a sum of squared differences of observed *y*<sub>*itj*</sub> and
 The figures below display the results of the predictive checks. Blue lines correspond to the inferred means with 95% confidence intervals. Orange dots correspond to the actual sample means. The fact that real values fall within the confidence intervals of simulated values provides an evidence that the model fits data well.
 
 
-<img src="/assets/postpredcheks.png" alt="my caption" style="width: 500px;"/>
+<img src="/assets/postpredcheks.png" alt="my caption" style="width: 800px; height = "600; />
 
 
 

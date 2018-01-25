@@ -466,15 +466,6 @@ there.
     font-size: 1rem;
 }
 
-#f {
-    position:relative;
-    bottom:0;
-    width:100%;
-    border-color: #999;
-    background-color: #F2F2F2;
-    border-width: 1px 0px 0px 0px;
-    font-size: 1rem;
-}
 
 /* Header styles */
 
