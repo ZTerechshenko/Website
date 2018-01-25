@@ -10,13 +10,13 @@ The model I constructed assumes that hostility is a unidimensional trait that ca
 
 The IRT model can be written as:
 
-![png](/assets/IRT-1.png)
+![png](/assets/IRT-1.png)  <!-- .element height="50%" width="50%" -->
 
 where F(.) denotes the logistic cumulative distribution function.
 
 The likelihood function for $\beta$, $\alpha$ and $\theta$ given the data is presented below:
 
-![png](/assets/IRT-2.png)
+![png](/assets/IRT-2.png)  <!-- .element height="50%" width="50%" -->
 
 Since *θ*<sub>*it*</sub> cannot be fully observed, all of the parameters of interests, namely $\theta$, $\beta$, and $\alpha$ must be estimated simultaneously. The use of Bayesian estimation, in which the model identification is achieved through the assignment of prior distributions is one of the most common approaches to solve this issue \citep{fariss2014respect, jackman2009bayesian}.
 
@@ -36,7 +36,7 @@ In order to assess the fit of the model I used posterior predictive checks. In p
 The figures below display the results of the predictive checks. Blue lines correspond to the inferred means with 95\% confidence intervals. Orange dots correspond to the actual sample means. The fact that real values fall within the confidence intervals of simulated values provides an evidence that the model fits data well.
 
 
-![png](/assets/postpredchecks.png)
+![png](/assets/postpredchecks.png)  <!-- .element height="50%" width="50%" -->
 
 
 
