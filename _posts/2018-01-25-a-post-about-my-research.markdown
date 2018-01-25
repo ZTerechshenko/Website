@@ -36,9 +36,7 @@ In order to assess the fit of the model I used posterior predictive checks. In p
 The figures below display the results of the predictive checks. Blue lines correspond to the inferred means with 95\% confidence intervals. Orange dots correspond to the actual sample means. The fact that real values fall within the confidence intervals of simulated values provides an evidence that the model fits data well.
 
 
-![pdf](/assets/k2.pdf)
-
-![pdf](/assets/k3k4.pdf)
+![png](/assets/postpredchecks.png)
 
 
 
