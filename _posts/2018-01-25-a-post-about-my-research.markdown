@@ -10,7 +10,7 @@ The model I constructed assumes that hostility is a unidimensional trait that ca
 
 The IRT model can be written as:
 
-![png](/assets/IRT-1.png){ width=250px }
+<img src="./assets/IRT-1.png" alt="my caption" style="width: 250px;"/>
 
 where F(.) denotes the logistic cumulative distribution function.
 
