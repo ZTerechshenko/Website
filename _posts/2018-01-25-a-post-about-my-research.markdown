@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Research: Latent Variable Measure of Interstate Hostility"
-date:   2017-11-25 
+date:   2018-01-25 
 ---
 
 This blog post presents my Master thesis (available [here]({{ site.url }}/assets/ZTerechshenko_MA.pdf)), where I created a new measure of interstate hostility by applying Bayesian ordinal item-response theory (O-IRT) model to a conflict events dataset, which I have created using data from Militarized Interstate Disputes (MID), Integrated Crisis Early Warning System (ICEWS), and International Crisis Behavior (ICB) datasets. 
