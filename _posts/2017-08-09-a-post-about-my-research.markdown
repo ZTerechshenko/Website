@@ -264,7 +264,7 @@ print(fit, pars=c("alpha", "beta", "x", "lp__"), probs=c(.5,.9))
 
 #### Posterior Estimates
 We can plot posterior estimates by taking the means of the posterior distributions with 95 percent credible intervals from the output of the model. 
-Posterior estimates plot allow us, for example, to identify observations (respondents) with higher or lower levels of the latent variable with the certain level of uncertainty.
+Posterior estimates plot allow us, for example, to identify observations (respondents) with higher or lower levels of the latent variable and the associated uncertainty.
 
 
 ``` r
@@ -302,8 +302,8 @@ This part shows how to plot and interpret the difficulty and discrimination para
 Both parameters can give us useful information about the relationship between our latent trait and items in the model. 
 Similarly to the posterior estimates example, we extract posterior means of the *α*<sub>*i*</sub> and *β*<sub>*i*</sub> values with 95 percent credible intervals from the model output.
 
-Recall that in this specific context the discrimination parameter reflects the extent to which change in the level of women’s mobility of social freedom corresponds to the change in the each of the manifestation variables.
-In particular, the results presented below show that if the level of the level of women’s mobility of social freedom increases, we are more likely to observe women attending political meetings and going to health centers/hospitals by themselves.
+Recall that in this specific context the discrimination parameter reflects the extent to which change in the level of women’s mobility of social freedom corresponds to the change in the each of the items/manifestation variables.
+In particular, the results presented below show that if the level of women’s mobility of social freedom increases, we are more likely to observe women attending political meetings and going to health centers/hospitals by themselves.
 Attendance of political meetings is the most informative indicator among all the items in our model.
 
 ``` r
@@ -398,7 +398,11 @@ X-axis on these plots indicates level of latent variable - women's mobility of s
 ICC incorporate information about both difficulty and discrimination parameters of the item. For example, discrimination reflects the steepness of the
 ICC in its middle section. The steeper the curve, the better the item can discriminate. The flatter the curve, the less the item is able to
 discriminate since the probability of the indicator/item to be present at low levels of latent variable is almost the same it is at high levels of latent variable.
-The location of the curve is determined by the difficulty parameter. The lower the curve, the higher is the difficulty parameter for this item and vice versa: the higher the curve, the lower is the difficulty of the item.
+The location of the curve is determined by the difficulty parameter. The lower the curve, the higher is the difficulty parameter for this item and the higher the curve, the lower is the difficulty of the item.
+
+For example, the ICC curve indicating the relationship between social freedom and ability for a woman to go to any part of town is flatter and higher than the ICC for the relationship between social freedom and an ability for a woman to go outside the town.
+It means that the difficulty and discrimination of the first item is lower than the second item. 
+In other words, whether a woman can go to any part of town is less informative and more likely to occur than whether a woman can go outside the town. 
 
 ``` r
 PARAMETERS = cbind(apply(output$alpha,2,mean),apply(output$alpha,2,sd),apply(output$alpha, 2, quantile, 0.975 ),apply(output$alpha, 2, quantile, 0.025 ), apply(output$beta,2,mean),apply(output$beta,2,sd),apply(output$beta, 2, quantile, 0.975 ),apply(output$beta, 2, quantile, 0.025 ) )
