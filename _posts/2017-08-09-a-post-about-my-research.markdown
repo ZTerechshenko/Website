@@ -107,7 +107,9 @@ The two-parameter IRT model can be written as:
 
 ![](/assets/CodeCogsEqn.gif)
 
-where <a href="https://www.codecogs.com/eqnedit.php?latex=y_{ij}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{ij}" title="y_{ij}" /></a> is the response for person *j* to item *i*, *α*<sub>*i*</sub> and *β*<sub>*i*</sub> are difficulty and discrimination parameters, and *θ*<sub>*j*</sub> is the latent trait of interest. Difficulty parameter *α*<sub>*i*</sub> shows the proportion of observations in each category of the latent trait is equal to zero. Discrimination parameter *β*<sub>*i*</sub> indicates the extent to which a change in the value of one of the items corresponds to a change in the latent trait (Jackman [2009](#ref-jackman2009bayesian)).
+where <a href="https://www.codecogs.com/eqnedit.php?latex=y_{ij}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{ij}" title="y_{ij}" /></a> is the response for person *j* to item *i*, *α*<sub>*i*</sub> and *β*<sub>*i*</sub> are difficulty and discrimination parameters, and *θ*<sub>*j*</sub> is the latent trait of interest. 
+Difficulty parameter *α*<sub>*i*</sub> shows the proportion of observations in each category of the latent trait is equal to zero. 
+Discrimination parameter *β*<sub>*i*</sub> indicates the extent to which a change in the value of one of the items corresponds to a change in the latent trait (Jackman [2009](#ref-jackman2009bayesian)).
 
 *θ*<sub>*j*</sub> is specified as a draw from the standard normal distribution such that *θ*<sub>*j*</sub> ∼ *N*(0,1).
 
@@ -255,11 +257,15 @@ print(fit, pars=c("alpha", "beta", "x", "lp__"), probs=c(.5,.9))
     ## and Rhat is the potential scale reduction factor on split chains (at 
     ## convergence, Rhat=1).
 
-### Plots
 
-In this section, I show how to plot posterior estimates, discrimination (alpha) and difficulty (beta) parameters, and item characteristics curves (ICC).
+
+[comment]: <> (In this section, I show how to plot and interpret posterior estimates, discrimination (alpha) and difficulty (beta) parameters, and item characteristics curves (ICC).)
+
 
 #### Posterior Estimates
+We can plot posterior estimates by taking the means of the posterior distributions with 95 percent credible intervals from the output of the model. 
+Posterior estimates plot allow us, for example, to identify observations (respondents) with higher or lower levels of the latent variable with the certain level of uncertainty.
+
 
 ``` r
 INDEX <- 1:n # make an index and re-order it
@@ -291,6 +297,14 @@ axis(side=2, at=1:n, labels=as.character(rownames(response))[INDEX], las=1)
 ![](/assets/unnamed-chunk-11-1.png)
 
 #### Difficulty and Discrimination Parameters
+
+This part shows how to plot and interpret the difficulty and discrimination parameters for each item. 
+Both parameters can give us useful information about the relationship between our latent trait and items in the model. 
+Similarly to the posterior estimates example, we extract posterior means of the *α*<sub>*i*</sub> and *β*<sub>*i*</sub> values with 95 percent credible intervals from the model output.
+
+Recall that in this specific context the discrimination parameter reflects the extent to which change in the level of women’s mobility of social freedom corresponds to the change in the each of the manifestation variables.
+In particular, the results presented below show that if the level of the level of women’s mobility of social freedom increases, we are more likely to observe women attending political meetings and going to health centers/hospitals by themselves.
+Attendance of political meetings is the most informative indicator among all the items in our model.
 
 ``` r
 INDEX <- 1:k
@@ -336,6 +350,12 @@ mtext(side = 1, "Discrimination Parameter",  line=2.5, cex=0.8)
 
 ![](/assets/unnamed-chunk-12-1.png)
 
+The difficulty parameter corresponds to the probability of an indicator of women’s mobility of social freedom being in a particular category when the level of mobility is zero.
+According to the results presented below, probability of a woman talking to a man she does not know is low irrespective of the level of mobility of social freedom.
+
+
+
+
 ``` r
 INDEX <- 1:k
 INDEX  <- INDEX[order(apply(output$alpha,2,mean))]
@@ -373,6 +393,12 @@ mtext(side = 1, "Difficulty Parameter", main='Difficulty', line=2.5, cex=0.8)
 ![](/assets/unnamed-chunk-13-1.png)
 
 #### Item Characteristic Curves
+Finally, item characteristic curves (ICC) is another way to look at the relationship between a latent variable and items in the model.
+X-axis on these plots indicates level of latent variable - women's mobility of social freedom, while Y-axis indicates the probability of the indicator to present (equal to 1 in a binary model).
+ICC incorporate information about both difficulty and discrimination parameters of the item. For example, discrimination reflects the steepness of the
+ICC in its middle section. The steeper the curve, the better the item can discriminate. The flatter the curve, the less the item is able to
+discriminate since the probability of the indicator/item to be present at low levels of latent variable is almost the same it is at high levels of latent variable.
+The location of the curve is determined by the difficulty parameter. The lower the curve, the higher is the difficulty parameter for this item and vice versa: the higher the curve, the lower is the difficulty of the item.
 
 ``` r
 PARAMETERS = cbind(apply(output$alpha,2,mean),apply(output$alpha,2,sd),apply(output$alpha, 2, quantile, 0.975 ),apply(output$alpha, 2, quantile, 0.025 ), apply(output$beta,2,mean),apply(output$beta,2,sd),apply(output$beta, 2, quantile, 0.975 ),apply(output$beta, 2, quantile, 0.025 ) )
